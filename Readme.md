@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александр Игумнов](https://up.htmlacademy.ru/htmlcss/22/user/827119).
-* Наставник: [Вадим Двухжилов].
+* Наставник: [Вадим Двухжилов](https://htmlacademy.ru/profile/ericssan).
 
 ---
 
