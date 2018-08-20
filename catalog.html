@@ -17,7 +17,9 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="user-purchases">Корзина</li>
+          <li class="user-basket">
+            <a class="basket-link" href="basket.html">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -25,7 +27,42 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--Здесь будет форма-->
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
+
+
+          </fieldset>
+          <fieldset>
+            <legend>Сетка</legend>
+
+          </fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+                <label for="filter-advantages">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallary" id="filter-gallary">
+                <label for="filter-gallary">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
       </section>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка товара</h2>
@@ -124,11 +161,24 @@
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
-
     <section class="modal write-us">
       <h2>Напишите нам</h2>
-      <!--Здесь будет форма-->
-      <span class="modal-close"></span>
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="write-name">Ваше имя:</label>
+          <input id="write-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="write-email">Ваш e-mail:</label>
+          <input id="write-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="write-letter">Текст письма:</label>
+          <textarea id="write-letter" type="text" name="letter" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button"  type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
