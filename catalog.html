@@ -27,18 +27,28 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+        <div class="filter-price">
+        </div>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
-            <legend>Стоимость</legend>
-
-
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="filter-fixed" value="fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="filter-rubber" value="rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset>
-            <legend>Сетка</legend>
-
-          </fieldset>
-          <fieldset>
-            <legend>Особенности</legend>
+            <legend>Особенности:</legend>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
@@ -62,6 +72,7 @@
               </li>
             </ul>
           </fieldset>
+          <button type="submit" class="filtet-button button">Показать</button>
         </form>
       </section>
       <section class="sorting">
@@ -174,7 +185,7 @@
         </p>
         <p>
           <label for="write-letter">Текст письма:</label>
-          <textarea id="write-letter" type="text" name="letter" placeholder="В свободной форме"></textarea>
+          <textarea id="write-letter" name="letter" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button"  type="submit">Отправить</button>
       </form>
