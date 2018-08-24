@@ -56,6 +56,7 @@ a {
 
 .button {
   font: inherit;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color:#ffffff;
@@ -160,4 +161,62 @@ a {
 
 .our-partners {
   list-style: none;
+}
+
+.contacts {
+  background-image: url("../img/map.jpg");
+}
+
+.contacts h4 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  line-height: 18px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.main-footer b {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-footer p {
+  line-height: 22px;
+}
+
+.modal {
+  color: #000000;
+  background-color:#ffffff;
+}
+
+.write-us h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.write-form input[type="text"],
+.write-form textarea {
+  font: inherit;
+  color: rgba(68, 68, 68, 0.5);
+  border: 2px solid #d7dcde;
+}
+
+.write-form input:hover {
+  border-color: #b4b9bb;
+}
+
+.write-form input:focus {
+  border-color: #000000;
+  color: #444444;
+}
+
+.write-form label {
+  line-height: 18px;
+  font-weight: bold;
 }
