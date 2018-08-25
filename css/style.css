@@ -9,6 +9,7 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+  outline: none;
 }
 
 a {
@@ -49,7 +50,8 @@ a {
   list-style: none;
 }
 
-.features-item h2 {
+.features-item h2,
+.page-title {
   font-size: 55px;
   line-height: 55px;
 }
@@ -62,8 +64,11 @@ a {
   color:#ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #fb565a;
   border: none;
+}
+
+.features-item a {
+  background-color: #fb565a;
 }
 
 .features-item a:hover {
@@ -142,6 +147,10 @@ a {
   background-color: #e5a722;
 }
 
+.item-description {
+  text-align: center;
+}
+
 .description b {
   font-size: 45px;
   line-height: 45px;
@@ -163,8 +172,120 @@ a {
   list-style: none;
 }
 
+.filter-title,
+.sorting-title,
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter label {
+  color: #283136;
+  line-height: 20px;
+}
+
+.filter-button {
+  color:#000000;
+  background-color: #eeeeee;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:focus {
+  opacity: 0.3;
+  background-color: #d5d5d5;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+.sorting-text:hover {
+  opacity: 0.6;
+}
+
+.sorting-text:focus:active {
+  opacity: 1;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.item-description {
+  background-color: #eeeeee;
+}
+
+.item-description h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.item-description p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.item-description a {
+  background-color: #fb565a;
+}
+
+.item-description a:hover {
+  background-color: #e74246;
+}
+
+.item-description a:focus {
+  background-color: #d7373b;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  line-height: 18px;
+  color: #000000;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:focus {
+  background-color: #d5d5d5;
+  opacity: 0.3;
+}
+
+.pagination-item-current {
+  border: 2px solid #dbdbdb;
+}
+
 .contacts {
   background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
 
 .contacts h4 {
@@ -219,4 +340,8 @@ a {
 .write-form label {
   line-height: 18px;
   font-weight: bold;
+}
+
+.contacts-button {
+  background-color: #fb565a;
 }
