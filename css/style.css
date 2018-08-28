@@ -45,6 +45,10 @@ a {
   opacity: 0.3;
 }
 
+.features {
+  background-color: #eeeeee;
+}
+
 .features-list {
   list-style: none;
 }
@@ -343,4 +347,48 @@ a {
 
 .contacts-button {
   background-color: #fb565a;
+}
+
+/* ----- Сеточные стили ----- */
+
+.conteiner {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 32px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-header-logo {
+  width: 200px;
+  height: 65px;
+}
+
+.main-navigation .conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  width: 640px;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation {
+  width: 180px;
+  margin: 0;
+  padding: 0;
+}
+
+.features {
+  background-color:;
 }
