@@ -488,3 +488,61 @@ a {
   margin: 0;
   padding: 0;
 }
+
+/* ----- catalog.html ----- */
+
+.inner-page .main-header {
+  margin-bottom: 92px;
+}
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 103px;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 262px;
+}
+
+.sorting {
+  width: 760px;
+}
+
+.catalog {
+  width: 760px;
+
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 33px;
+  margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+}
+
+.inner-page .main-footer {
+  margin-top: 60px;
+}
