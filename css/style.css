@@ -286,11 +286,11 @@ a {
   border: 2px solid #dbdbdb;
 }
 
-.footer-map {
+.map {
   height: 416px;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-
+  background-size: cover;
 }
 
 .contacts h4 {
@@ -356,7 +356,7 @@ a {
 .conteiner {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 /* ----- HEADER ----- */
@@ -442,6 +442,9 @@ a {
 .advantages {
   width: 360px;
 }
+.partners {
+  margin-bottom: 80px;
+}
 
 .our-partners {
   padding: 0;
@@ -459,12 +462,12 @@ a {
 /* ----- FOOTER ----- */
 
 .main-footer {
-  margin-top: 80px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
 }
 
-.footer-contacts {
+.contacts {
   width: 320px;
   margin: 0;
   padding: 0;
@@ -472,7 +475,6 @@ a {
 
 .footer-wrapper {
   width: 100%;
-  margin-top: 69px;
   display: flex;
   justify-content: center;
 }
