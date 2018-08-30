@@ -56,6 +56,8 @@ a {
   line-height: 55px;
 }
 
+.features-item p {
+}
 
 .page-title {
   font-size: 55px;
@@ -368,23 +370,16 @@ a {
   margin-bottom: 80px;
 }
 
-.header-wrapper {
-  display: flex;
-}
-
 .main-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.header-logo {
+.main-header-logo {
   width: 200px;
   height: 65px;
-}
-
-.main-navigation .conteiner {
-  display: flex;
-  justify-content: space-between;
 }
 
 .site-navigation {
@@ -395,8 +390,8 @@ a {
 
 .user-navigation {
   width: 180px;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .features {
@@ -412,12 +407,14 @@ a {
 .features-item {
   width: 460px;
   height: 411px;
+  padding: 0;
+  margin: 0;
 }
 
 /* ----- MAIN ----- */
 
 .services {
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .services-list {
@@ -431,7 +428,6 @@ a {
   width: 300px;
 }
 
-
 .about-us {
   margin-bottom: 77px;
 }
@@ -439,7 +435,6 @@ a {
 .index-columns {
   display: flex;
   justify-content: space-between;
-  padding-top: 74px;
 }
 
 .description {
