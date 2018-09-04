@@ -88,8 +88,8 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 840px;
+  justify-content: space-between;
+  width: 440px;
 }
 
 .user-navigation {
@@ -100,7 +100,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a,
 .user-navigation a {
   display: block;
-  padding: 75px 23px 0;
+  margin-top: 75px;
 
   vertical-align: middle;
   color: #000000;
@@ -113,7 +113,13 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a:active,
 .user-navigation a:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+.site-navigation .current {
+  border-bottom: 2px solid #fb565a;
+  padding-bottom: 4px;
 }
 
 .user-navigation .basket-link {
@@ -126,7 +132,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 82px;
+  top: 7px;
   left: 45px;
 
   width: 15px;
@@ -930,6 +936,11 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
+.filter-input-radio:checked + label::before,
+.filter-input-checkbox:checked + label::before {
+  visibility: hidden;
+}
+
 .filter-input-radio + label:hover::before,
 .filter-input-radio:checked + label:hover::after,
 .filter-input-checkbox + label:hover::before,
@@ -982,7 +993,7 @@ input[type="radio"].visually-hidden {
 .sorting-text:hover {
   opacity: 0.6;
 }
-
+.sorting-tools .current,
 .sorting-text:active {
   opacity: 1;
 }
@@ -1046,7 +1057,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 
   list-style: none;
 }
