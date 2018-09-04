@@ -40,7 +40,7 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filter-item">
+            <fieldset class="filter-cost">
               <legend>Стоимость:</legend>
               <div class="range-filter">
                 <div class="range-controls">
@@ -52,11 +52,11 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
                 </div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-grid">
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
@@ -73,7 +73,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-features">
               <legend>Особенности:</legend>
               <ul>
                 <li class="filter-option">
@@ -105,14 +105,16 @@
           <section class="sorting">
             <h2 class="visually-hidden">Сортировка товара</h2>
             <p class="sorting-title">Сортировать</p>
-            <ul>
-              <li><a href="#" class="sorting-text">По цене</a></li>
-              <li><a href="#" class="sorting-text">По типу</a></li>
-              <li><a href="#" class="sorting-text">По названию</a></li>
-            </ul>
-            <div class="sorting-pointer">
-              <a href="#" class="point-up"></a>
-              <a href="#" class="point-down"></a>
+            <div class="sorting-tools">
+              <ul>
+                <li><a href="#" class="sorting-text">По цене</a></li>
+                <li><a href="#" class="sorting-text">По типу</a></li>
+                <li><a href="#" class="sorting-text">По названию</a></li>
+              </ul>
+              <div class="sorting-pointer">
+                <a href="#" class="point-up"></a>
+                <a href="#" class="point-down"></a>
+              </div>
             </div>
           </section>
           <section class="catalog">
