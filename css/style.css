@@ -89,7 +89,14 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 440px;
+}
+
+.site-navigation li {
+  margin-right: 46px;
+}
+
+.site-navigation li:last-child {
+  margin-right: 0;
 }
 
 .user-navigation {
@@ -388,12 +395,14 @@ input[type="radio"].visually-hidden {
 .about-us {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+
   border-bottom: 2px solid #eeeeee;
 }
 
 .description {
   width: 660px;
+  padding-top: 75px;
+  padding-bottom: 73px;
 }
 
 .description-title {
@@ -403,7 +412,6 @@ input[type="radio"].visually-hidden {
   line-height: 45px;
   margin: 0;
   padding: 0;
-  padding-top: 75px;
 }
 
 .description-about {
@@ -424,7 +432,6 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding: 0;
   margin: 0;
-  padding-bottom: 73px;
   list-style: none;
 }
 
@@ -501,6 +508,7 @@ input[type="radio"].visually-hidden {
 }
 
 .partners {
+  padding-top: 50px;
   margin-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
@@ -518,9 +526,6 @@ input[type="radio"].visually-hidden {
 
 .item-partner {
   position: relative;
-}
-
-.brand {
   width: 260px;
   text-align: center;
 
@@ -547,18 +552,17 @@ input[type="radio"].visually-hidden {
   height: 90px;
 }
 
-.brand:hover {
+.item-partner:hover {
   opacity: 1;
 }
 
-.brand:active {
+.item-partner:active {
   opacity: 0.1;
 }
 
 /*---footer---*/
 
 .main-footer {
-  margin-top: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -941,6 +945,9 @@ input[type="radio"].visually-hidden {
   visibility: hidden;
 }
 
+.filter-input-radio:checked:focus + label::after,
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:checked:focus + label::after,
 .filter-input-radio + label:hover::before,
 .filter-input-radio:checked + label:hover::after,
 .filter-input-checkbox + label:hover::before,
