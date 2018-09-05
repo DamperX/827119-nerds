@@ -626,6 +626,7 @@ input[type="radio"].visually-hidden {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 68px;
 }
 
 .footer-social ul {
@@ -1220,32 +1221,106 @@ input[type="radio"].visually-hidden {
 /*---modal---*/
 
 .modal {
+  position: fixed;
   color: #000000;
+
   background-color:#ffffff;
 }
 
+.write-us {
+  display: none;
+  top: 128px;
+  left: 50%;
+  width: 760px;
+  margin-left: -480px;
+  padding: 100px;
+  padding-top: 65px;
+  padding-bottom: 84px;
+  box-shadow:
+   0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
 .write-us h2 {
+  margin: 0;
+  margin-bottom: 36px;
   font-size: 45px;
   line-height: 45px;
+}
+
+.write-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.write-form p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .write-form input[type="text"],
 .write-form textarea {
   font: inherit;
+  padding: 10px 13px;
   color: rgba(68, 68, 68, 0.5);
   border: 2px solid #d7dcde;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
-.write-form input:hover {
+.write-form input[type="text"]:invalid,
+.write-form textarea:invalid {
+  color: #e74246;
+  border-color: #e74246;
+}
+
+.write-form textarea {
+  width: 760px;
+  padding-bottom: 55px;
+  margin-bottom: 40px;
+  resize: none;
+}
+
+.write-form input[type="text"] {
+  width: 360px;
+  margin-bottom: 24px;
+}
+
+.write-form input[type="text"]:hover,
+.write-form textarea:hover {
   border-color: #b4b9bb;
 }
 
-.write-form input:active {
+.write-form input:focus {
   border-color: #000000;
-  color: #444444;
+  color: rgba(68, 68, 68, 1);
 }
 
 .write-form label {
   line-height: 18px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 76px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+  background-color: #ffffff;
+  background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
+  border: 0;
+
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.write-us button:not(.modal-close) {
+  width: 260px;
 }
