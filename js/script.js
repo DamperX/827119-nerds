@@ -4,8 +4,8 @@ var popup = document.querySelector(".write-us");
 var close = popup.querySelector(".modal-close");
 
 var form = popup.querySelector(".write-form");
-var login = popup.querySelector("[name=name]");
-var email = popup.querySelector("[name=email]");
+ var login = popup.querySelector("[name=name]");
+ var email = popup.querySelector("[name=email]");
 
 var isStorageSupport = true;
 var storage = "";

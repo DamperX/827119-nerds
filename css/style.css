@@ -1472,6 +1472,11 @@ input[type="radio"].visually-hidden {
           animation: bounce 0.6s;
 }
 
+.modal-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
+}
+
 .write-us h2 {
   margin: 0;
   margin-bottom: 36px;
@@ -1513,12 +1518,6 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
 }
 
-.write-form input[type="text"]:invalid,
-.write-form textarea:invalid {
-  color: #e74246;
-  border-color: #e74246;
-}
-
 .write-form textarea {
   width: 760px;
   height: 120px;
@@ -1541,9 +1540,9 @@ input[type="radio"].visually-hidden {
   color: rgba(68, 68, 68, 1);
 }
 
-.modal-error {
-  -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
+.modal-error input[type="text"] {
+  color: #e74246;
+  border-color: #e74246;
 }
 
 .write-form label {
