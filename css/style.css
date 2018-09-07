@@ -1054,7 +1054,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.filter-option input[type="radio"]:disabled + label:before, [type="checkbox"]:disabled + label:before, {
+.filter-option input[type="radio"]:disabled + label:before, [type="checkbox"]:disabled + label:before {
   opacity: 0.1;
 }
 
