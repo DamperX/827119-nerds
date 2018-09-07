@@ -1472,11 +1472,6 @@ input[type="radio"].visually-hidden {
           animation: bounce 0.6s;
 }
 
-.modal-error {
-  -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
-}
-
 .write-us h2 {
   margin: 0;
   margin-bottom: 36px;
@@ -1544,6 +1539,11 @@ input[type="radio"].visually-hidden {
 .write-form input:focus {
   border-color: #000000;
   color: rgba(68, 68, 68, 1);
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .write-form label {
