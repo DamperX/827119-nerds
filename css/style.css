@@ -561,8 +561,6 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 260px;
   text-align: center;
-
-  opacity: 0.2;
 }
 
 .item-partner:not(:last-of-type)::after {
@@ -594,13 +592,14 @@ input[type="radio"].visually-hidden {
           align-items: center;
   width: 260px;
   height: 90px;
+  opacity: 0.2;
 }
 
-.item-partner:hover {
+.partners-link:hover {
   opacity: 1;
 }
 
-.item-partner:active {
+.partners-link:active {
   opacity: 0.1;
 }
 
