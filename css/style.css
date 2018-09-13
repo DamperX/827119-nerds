@@ -524,10 +524,6 @@ input[type="radio"].visually-hidden {
   padding-right: 18px;
 }
 
-.advatages-table td:not(:first-of-type) {
-  position: right;
-}
-
 .advantages-table sup {
   font-size: 60%;
 }
